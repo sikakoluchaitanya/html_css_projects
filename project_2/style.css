@@ -1,0 +1,77 @@
+
+.top{
+    background-color: orange;
+    height: 300px;
+    width: 1400px;
+}
+
+.middle{
+    background-color: white;
+    height: 300px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom{
+    height: 300px;
+    width: 1400px;
+    background-color: green;
+}
+
+.wheel{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    outline: 1px solid darkblue;
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    height: 300px;
+    width: 1px;
+    background-color: darkblue;
+   
+}
+
+/*<span> elements are inline elements by default, and inline elements do not have a visual width or height.
+ When you apply transformations like rotations to inline elements, 
+they might not behave as you expect.To resolve this issue, you can change the display property of the .line elements to inline-block 
+or block to ensure they have a visual width and height that can be rotated.*/
+
+.line{
+    display: inline-block;
+}
+
+.line:nth-child(1) {
+    transform: rotate(15deg);
+}
+
+.line:nth-child(2) {
+    transform: rotate(30deg);
+}
+
+.line:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+.line:nth-child(4) {
+    transform: rotate(60deg);
+}
+
+.line:nth-child(5) {
+    transform: rotate(75deg);
+}
+
+.line:nth-child(6) {
+    transform: rotate(90deg);
+}
+
+.line:nth-child(7) {
+    transform: rotate(105deg);
+}
+
+.line:nth-child(8) {
+    transform: rotate(120deg);
+}
